@@ -16,6 +16,7 @@ const buildControls = (props) => (
 
     {controls.map(control => {
       return <BuildControl
+        key={control.type}
         label={control.label}
         type={control.type}
         added={() => props.ingredientAdded(control.type)}
