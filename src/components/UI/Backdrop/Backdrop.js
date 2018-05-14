@@ -1,12 +1,8 @@
-// import React from 'react';
+import React from 'react';
+import classes from './Backdrop.css';
 
-// const layout = (props) => (
-//   <Aux>
-//     <div>Toolbar, SideDrawer, Backdrop</div>
-//     <main className={classes.Content}>
-//       {props.children}
-//     </main>
-//   </Aux>
-// );
+const backdrop = (props) => (
+  props.show ? <div className={classes.Backdrop} onClick={props.clicked}></div> : null
+);
 
-// export default layout;
+export default backdrop;
